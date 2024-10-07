@@ -1,0 +1,461 @@
+﻿body {
+}
+
+.container {
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    width:1250px;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: mediumspringgreen;
+    color: lightseagreen;
+    text-align: center;
+    font-size: 15px;
+}
+
+.lg_Sear_Gio {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .lg_Sear_Gio img {
+        height: 100px;
+        width: 100px;
+        margin-left: 20px;
+    }
+
+.search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.search-bar {
+    width: 700px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    .search-button:hover {
+        background-color: #0056b3;
+    }
+
+.categories {
+    text-align: left;
+    margin-top: 10px;
+}
+
+    .categories a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: #777777;
+        font-size: 15px;
+    }
+
+.giochu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.giohang_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+}
+
+    .giohang_top a {
+        margin: 10px;
+        text-decoration: none;
+        color: black;
+        font-size: 14px;
+    }
+
+.lienhe {
+    text-align: left;
+    background-color: white;
+    margin-top: 2px;
+    padding:10px;
+}
+
+    .lienhe a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: black;
+        font-size: 14px;
+    }
+
+        .lienhe a:hover {
+            margin-right: 10px;
+        }
+
+
+
+.content {
+    background-color: #f4f4f4;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.vitrihere {
+    margin-bottom: 20px;
+}
+
+    .vitrihere a {
+        text-decoration: none;
+        color: black;
+        font-size: 15px;
+    }
+
+.contentsp {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav_left {
+    width: 35%;
+}
+
+.trungbay {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+    .trungbay p {
+        border-bottom: 1px solid #e0e0e0;
+        padding: 13px;
+    }
+
+.listsp {
+    font-family: Bahnschrift;
+    font-weight: 600;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 13px;
+}
+
+    .listsp a {
+        color: #555;
+        text-decoration: none;
+    }
+
+.listsp1 {
+    font-family: Bahnschrift;
+    font-weight: 600;
+    padding: 13px;
+}
+
+    .listsp1 a {
+        color: #555;
+        text-decoration: none;
+    }
+
+.product {
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 10px;
+    color: black;
+}
+
+    .product img {
+        width: 150px;
+        height: 150px;
+    }
+
+.danhgia {
+    width: fit-content;
+    border-right: 1px solid #e0e0e0;
+    margin-right: 10px;
+}
+
+.daban {
+    width: fit-content;
+    margin-right: 10px;
+}
+
+.danhgia_daban {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    height: 10px;
+}
+
+.product button {
+    background-color: mediumblue;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.nav_right {
+    width: auto;
+    float: left;
+    margin-left: 20px;
+}
+
+    .nav_right header {
+        background-color: white;
+        color: black;
+        padding: 10px;
+        text-align: left;
+        height: 20px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+    }
+
+.slidesss {
+    width:960px; 
+    height: 130px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: calc(100% * 1); /* 4 là số slide bạn muốn hiển thị */
+}
+
+.slide {
+    min-width: 400px;; /* Hiển thị 4 phần tử cùng lúc (100% / 4 = 25%) */
+    box-sizing: border-box;
+}
+
+    .slide img {
+        width: 390px;
+        height: 120px;
+        border-radius: 5px;
+    }
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.button.prev {
+    left: 0;
+}
+
+.button.next {
+    right: 0;
+}
+
+.bottom {
+    background-color: cornflowerblue;
+}
+
+.khampha {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.header_khampha {
+    margin-left: 10px;
+    height: 30px;
+}
+
+.khampha_section {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 5px;
+}
+
+.khampha_tong {
+    width: 150px;
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.khampha_img img {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+}
+
+.infor a {
+    text-decoration: none;
+    font-size: 11px;
+}
+
+.tatcasanpham {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.chitiet {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.khoi_chitiet {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ten_chitiet {
+    color: #999999;
+    font-size: 11px;
+}
+
+.nut_chitiet {
+    display: flex;
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+.button_chitiet {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+    margin-right: 5px;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.button_chitiet_all {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: white;
+    cursor: pointer;
+    margin-right: 5px;
+    font-size: 12px;
+    padding: 5px;
+    margin-top: 90%;
+}
+
+.tich_ship {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    border-top: 1px solid #e0e0e0;
+}
+
+.tich {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    font-size: 13px;
+    margin-right: 10px;
+}
+
+.sapxep {
+    margin-left: 25%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 7px;
+}
+
+    .sapxep p {
+        font-size: 13px;
+        margin-right: 10px;
+    }
+
+.items {
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color:white;
+    margin-right:10px;
+    align-items:center;
+}
+
+.item-img img {
+    height: 180px;
+    width: 180px;
+    border-radius: 5px;
+}
+
+.items-dittion {
+    color: black;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start
+}
+.product-danhgia {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+    .product_sao {
+        border-right: 1px solid #e0e0e0;
+    }
+
+.luachon_sp_product_button {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    margin-right: 5px;
+    font-size: 12px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.product_sp {
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 5px;
+}
+
+.NhanHieu {
+    color: #999999;
+}
